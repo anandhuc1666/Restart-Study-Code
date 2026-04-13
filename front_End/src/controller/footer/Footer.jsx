@@ -5,62 +5,84 @@ import { BsSuitClubFill } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className="bg-[#1C2024] w-full h-[40vh] mt-25 flex font-Nunito">
-      <div className="w-137 h-[40vh] text-white flex flex-col gap-4 justify-center">
-        <ul className="pl-5">
-          <li className="text-[23px] font-bold">001</li>
-          <li className="text-[15px] font-semibold">
-            Digital Marketing Agency
-          </li>
-        </ul>
-        <ul className="pl-5">
-          <li className="text-[20px] font-semibold">
-            Built on hard work. Driven by results.
-          </li>
-          <li className="text-[12px] font-light">
-            We help businesses grow through design, development, and digital
-            marketing solutions.
-          </li>
-        </ul>
-        <div className="flex items-center gap-1 pl-3 font-semibold text-[20px]">
-          <BsSuitDiamondFill className="text-[#397ABF]" />
-          <p>Contact Info</p>
-        </div>
-        <ul className="text-[13px] pl-5">
-          <li>Kerala, India</li>
-          <li>001digitalmarketingagentcy@email.com</li>
-          <li>+91 XXXXX XXXXX</li>
-        </ul>
+   <div className="bg-[#1C2024] w-full text-white font-Nunito mt-20">
+  <div className="max-w-7xl mx-auto px-5 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    
+    {/* LEFT SECTION */}
+    <div className="flex flex-col gap-4">
+      <ul>
+        <li className="text-2xl font-bold">001</li>
+        <li className="text-sm font-semibold">
+          Digital Marketing Agency
+        </li>
+      </ul>
+
+      <ul>
+        <li className="text-lg font-semibold">
+          Built on hard work. Driven by results.
+        </li>
+        <li className="text-xs font-light">
+          We help businesses grow through design, development, and digital
+          marketing solutions.
+        </li>
+      </ul>
+
+      <div className="flex items-center gap-2 font-semibold text-lg">
+        <BsSuitDiamondFill className="text-[#397ABF]" />
+        <p>Contact Info</p>
       </div>
-      <div className="w-137 h-[40vh] text-white flex justify-between px-3 py-5 relative">
-        <ul className="flex flex-col gap-1">
-          <div className="flex items-center gap-1 font-semibold text-[20px]">
-            <BsSuitClubFill className="text-[#397ABF]" />
-            <li className="text-[17px] font-bold">Quick Links</li>
-          </div>
-          <li className="pl-6 text-[14px] font-semibold">Home</li>
-          <li className="pl-6 text-[14px] font-semibold">About Us</li>
-          <li className="pl-6 text-[14px] font-semibold">Services</li>
-          <li className="pl-6 text-[14px] font-semibold">Projects</li>
-          <li className="pl-6 text-[14px] font-semibold">Contact</li>
-        </ul>
-        <ul className="flex flex-col gap-1">
-          <div className="flex items-center gap-1 font-semibold text-[20px]">
-            <BsFillSuitSpadeFill className="text-[#397ABF]" />
-            <li className="text-[17px] font-bold">Services</li>
-          </div>
-          <li className="pl-6 text-[14px] font-semibold">Web Design</li>
-          <li className="pl-6 text-[14px] font-semibold">Web Development</li>
-          <li className="pl-6 text-[14px] font-semibold">Meta Ads</li>
-          <li className="pl-6 text-[14px] font-semibold">Google Ads</li>
-          <li className="pl-6 text-[14px] font-semibold">Branding</li>
-        </ul>
-        <p className="absolute bottom-2 text-[12px]">© 2026 001. All Rights Reserved.</p>
-      </div>
-      <div className="min-w-min h-[40vh] flex items-center justify-center font-Nunito text-white">
-        <p>Let’s build something great together.</p>
-      </div>
+
+      <ul className="text-sm">
+        <li>Kerala, India</li>
+        <li>001digitalmarketingagentcy@email.com</li>
+        <li>+91 XXXXX XXXXX</li>
+      </ul>
     </div>
+
+    {/* MIDDLE SECTION */}
+    <div className="flex flex-col sm:flex-row justify-between gap-10">
+      
+      {/* Quick Links */}
+      <ul className="flex flex-col gap-2">
+        <div className="flex items-center gap-2 font-semibold text-lg">
+          <BsSuitClubFill className="text-[#397ABF]" />
+          <li className="font-bold">Quick Links</li>
+        </div>
+        <li className="pl-5 text-sm">Home</li>
+        <li className="pl-5 text-sm">About Us</li>
+        <li className="pl-5 text-sm">Services</li>
+        <li className="pl-5 text-sm">Projects</li>
+        <li className="pl-5 text-sm">Contact</li>
+      </ul>
+
+      {/* Services */}
+      <ul className="flex flex-col gap-2">
+        <div className="flex items-center gap-2 font-semibold text-lg">
+          <BsFillSuitSpadeFill className="text-[#397ABF]" />
+          <li className="font-bold">Services</li>
+        </div>
+        <li className="pl-5 text-sm">Web Design</li>
+        <li className="pl-5 text-sm">Web Development</li>
+        <li className="pl-5 text-sm">Meta Ads</li>
+        <li className="pl-5 text-sm">Google Ads</li>
+        <li className="pl-5 text-sm">Branding</li>
+      </ul>
+    </div>
+
+    {/* RIGHT SECTION */}
+    <div className="flex items-center justify-center text-center">
+      <p className="text-lg">
+        Let’s build something great together.
+      </p>
+    </div>
+
+  </div>
+
+  {/* FOOTER BOTTOM */}
+  <div className="text-center text-xs pb-5">
+    © 2026 001. All Rights Reserved.
+  </div>
+</div>
   );
 }
 

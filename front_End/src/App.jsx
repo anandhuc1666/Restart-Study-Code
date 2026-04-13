@@ -2,6 +2,7 @@ import React from "react";
 import Body from "./controller/Home/body/Body";
 import Nav from "./controller/Navication/Nav";
 import SubBody from "./controller/Home/subBody/SubBody";
+import Footer from "./controller/footer/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Nav />
       <Body />
       <SubBody/>
+      <Footer />
     </div>
   );
 }
