@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import banner_han from "../../../photos/contact han.png";
+import zeroLogo from "../../../photos/001_logo.png"
 
 function Nav() {
   const [About, setAbout] = useState(false);
@@ -9,7 +10,7 @@ function Nav() {
 
   return (
     <div className="w-[85%] h-20 backdrop-blur-md bg-white/30 border-b border-white/20 shadow-lg px-5 rounded-4xl sm:flex hidden items-center justify-between font-bold text-[18px] fixed z-30 top-10">
-      <div className="w-18 h-18 rounded-full bg-[#D9D9D9]"></div>
+      <div className="w-18 h-18 rounded-full bg-[#D9D9D9] flex items-center justify-center"><img src={zeroLogo} alt="" className="w-18 rounded-full h-18"/></div>
       <div className="flex gap-20 items-center">
         <ul className="flex gap-7">
           <li
