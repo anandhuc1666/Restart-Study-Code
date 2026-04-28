@@ -14,7 +14,7 @@ function Nav() {
       <div className="flex gap-20 items-center">
         <ul className="flex gap-7">
           <li
-            className={`hover:text-[#397ABF] ${About === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-black`}`}
+            className={`hover:text-[#397ABF] ${About === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-[#F0F0F3]`}`}
             onClick={() => {
               (setAbout(!About),
                 setService(false),
@@ -25,7 +25,7 @@ function Nav() {
             About Us
           </li>
           <li
-            className={`hover:text-[#397ABF] ${Services === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-black`}`}
+            className={`hover:text-[#397ABF] ${Services === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-[#F0F0F3]`}`}
             onClick={() => {
               (setAbout(false),
                 setService(!Services),
@@ -38,7 +38,7 @@ function Nav() {
         </ul>
         <ul className="flex gap-7 items-center">
           <li
-            className={`hover:text-[#397ABF] ${team === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-black`}`}
+            className={`hover:text-[#397ABF] ${team === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-[#F0F0F3]`}`}
             onClick={() => {
               (setAbout(false),
                 setService(false),
@@ -49,7 +49,7 @@ function Nav() {
             Team
           </li>
           <li
-            className={`hover:text-[#397ABF] ${policy === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-black`}`}
+            className={`hover:text-[#397ABF] ${policy === true ? `text-[#397ABF] border-b-3 border-[#397ABF]` : `text-[#F0F0F3]`}`}
             onClick={() => {
               (setAbout(false),
                 setService(false),
